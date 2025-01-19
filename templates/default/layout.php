@@ -27,8 +27,6 @@ if (isset($hookManager)) {
     <link rel="stylesheet" href="<?= $cmsManager->baseUrl('templates/' . $templateName . '/style.css'); ?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-
     <!-- Dynamically Load reCAPTCHA v3 -->
     <?php if ($recaptchaEnabled && !empty($recaptchaSiteKey)): ?>
         <script src="https://www.google.com/recaptcha/api.js?render=<?= htmlspecialchars($recaptchaSiteKey); ?>"></script>
@@ -84,16 +82,6 @@ if (isset($hookManager)) {
                 </ul>
             </nav>
 <div class="sidebar-widgets">
-    <div class="join-discord" style="margin-bottom: 15px;">
-        <p>
-            <i class="fas fa-gamepad" style="color: #5865F2; margin-right: 8px;"></i>
-            <strong>?? Want to game?</strong><br>
-            Play <em>No Man's Sky</em>, <em>Farming Simulator 25</em>, <em>Fortnite</em>, <em>PUBG</em>, or just connect and chat! <br>
-            <a href="https://discord.gg/bYXSVZm5s2" target="_blank" style="color: #5865F2; text-decoration: none; font-weight: bold;">
-                Join my Discord server!
-            </a>
-        </p>
-    </div>
     <?php $hookManager->executeHooks('sidebar', $currentRoute); ?>
 </div>
         </aside>
