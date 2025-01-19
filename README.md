@@ -16,3 +16,5 @@ Core Features
     SEO-Friendly Structure: Optimize your site with clean URLs, meta tags, and an architecture designed to boost search engine rankings.
 
 Still under development - But is powering my website https://l1quid.design
+
+Working on the CMS install procedures 
