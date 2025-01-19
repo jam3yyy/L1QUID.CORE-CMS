@@ -83,3 +83,5 @@ if (file_exists($templatePath)) {
     echo "<p>Template not found. Please check your configuration.</p>";
     exit();
 }
+
+?>
